@@ -1,0 +1,7 @@
+.nav {
+  font-family: 'ptSansBold';
+  &__list {
+    display: flex;
+    justify-content: space-around;
+  }
+}

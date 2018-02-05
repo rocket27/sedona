@@ -4,100 +4,100 @@ block variables
   - var title = 'title'
 
 block content
-  .wrapper.container
-    include ../common/header
-    main.main
-      h1.main__title Добро пожаловать в Седону!
-      .greeting
-        img.greeting__image(src="img/content/greeting.png" alt="Добро пожаловать в Седону!")
-      section.section.about
-        h2.section__title.section__title_about
-          | Седона — небольшой городок в Аризоне, 
-          | заслуживающий большего!
-        p.about__text 
-          | Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!
-        .about__wrapper
-          ul.advantages
-            li.advantages__item
-              svg.advantages__icon
-                use(xlink:href="img/sprite.svg#icon-1")
-              h3.advantages__title Жилье
-              p.advantages__text
-                | Рекомендуем пожить в настоящем 
-                | мотеле, все как в кино!
-            li.advantages__item
-              svg.advantages__icon
-                use(xlink:href="img/sprite.svg#icon-2")
-              h3.advantages__title Еда
-              p.advantages__text
-                | Всегда заказывайте фирменный бургер,  
-                | вы не разочаруетесь!
-            li.advantages__item
-              svg.advantages__icon
-                use(xlink:href="img/sprite.svg#icon-3")
-              h3.advantages__title Сувениры
-              p.advantages__text
-                | Не только китайского, 
-                | но и местного производства!
-          article.reason.reason_preview
-            h3.reason__title
-              | Настоящий
-              br
-              | городок
-            span.reason__order №1
-            p.reason__text
-              | Седона — не аттракцион для туристов, 
-              | там течет своя жизнь
-          article.reason.reason_preview
-            h3.reason__title
-              | Там есть
-              br
-              | Мост дьявола
-            span.reason__order №2
-            p.reason__text
-              | Да, по нему можно пройти! 
-              | Если конечно вы осмелитесь
-          article.reason
-            h3.reason__title
-              | Небольшая
-              br
-              | площадь
-            span.reason__order №3
-            p.reason__text
-              | Все достопримечательности 
-              | находятся очень близко
-          article.reason
-            h3.reason__title
-              | Красивая 
-              br
-              | дорога
-            span.reason__order №4
-            p.reason__text
-              | Ехать в седону из Лас-Вегаса 
-              | совсем не скучно!
-          article.reason
-            h3.reason__title
-              | Мало 
-              br
-              | туристов
-            span.reason__order №5
-            p.reason__text
-              | Большинство едет в Гранд  
-              | Каньон и толпится там
-      section.section.booking
-        h2.section__title
-          | Заинтересовались?
-        p.booking__text
-          | Укажите предполагаемые даты поездки, 
-          br
-          | и мы покажем вам лучшие предложения 
-          | гостиниц в седоне
-        a.booking__searchButton(href="#")
-          | Поиск гостиницы в Седоне
-        form.bookingForm(action="#" method="post")
-          
-      section.section.map
-        h2.section__title.section__title_hidden
-          | Расположение на карте
-        .mapContainer#map
-  include ../common/footer
+  .container
+    .wrapper
+      include ../common/header
+      main.main
+        h1.main__title Добро пожаловать в Седону!
+        .greeting
+          img.greeting__image(src="img/content/greeting.png" alt="Добро пожаловать в Седону!")
+        section.section.about
+          h2.section__title.section__title_about
+            | Седона — небольшой городок в Аризоне, 
+            | заслуживающий большего!
+          p.about__text 
+            | Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!
+          .about__wrapper
+            ul.advantages
+              li.advantages__item
+                svg.advantages__icon
+                  use(xlink:href="img/sprite.svg#icon-1")
+                h3.advantages__title Жилье
+                p.advantages__text
+                  | Рекомендуем пожить в настоящем 
+                  | мотеле, все как в кино!
+              li.advantages__item
+                svg.advantages__icon
+                  use(xlink:href="img/sprite.svg#icon-2")
+                h3.advantages__title Еда
+                p.advantages__text
+                  | Всегда заказывайте фирменный бургер,  
+                  | вы не разочаруетесь!
+              li.advantages__item
+                svg.advantages__icon
+                  use(xlink:href="img/sprite.svg#icon-3")
+                h3.advantages__title Сувениры
+                p.advantages__text
+                  | Не только китайского, 
+                  | но и местного производства!
+            article.reason.reason_preview
+              h3.reason__title
+                | Настоящий
+                br
+                | городок
+              span.reason__order №1
+              p.reason__text
+                | Седона — не аттракцион для туристов, 
+                | там течет своя жизнь
+            article.reason.reason_preview
+              h3.reason__title
+                | Там есть
+                br
+                | Мост дьявола
+              span.reason__order №2
+              p.reason__text
+                | Да, по нему можно пройти! 
+                | Если конечно вы осмелитесь
+            article.reason
+              h3.reason__title
+                | Небольшая
+                br
+                | площадь
+              span.reason__order №3
+              p.reason__text
+                | Все достопримечательности 
+                | находятся очень близко
+            article.reason
+              h3.reason__title
+                | Красивая 
+                br
+                | дорога
+              span.reason__order №4
+              p.reason__text
+                | Ехать в седону из Лас-Вегаса 
+                | совсем не скучно!
+            article.reason
+              h3.reason__title
+                | Мало 
+                br
+                | туристов
+              span.reason__order №5
+              p.reason__text
+                | Большинство едет в Гранд  
+                | Каньон и толпится там
+        section.section.booking
+          h2.section__title
+            | Заинтересовались?
+          p.booking__text
+            | Укажите предполагаемые даты поездки, 
+            br
+            | и мы покажем вам лучшие предложения 
+            | гостиниц в седоне
+          a.booking__searchButton(href="#")
+            | Поиск гостиницы в Седоне
+          form.bookingForm(action="#" method="post")
+        section.section.map
+          h2.section__title.section__title_hidden
+            | Расположение на карте
+          .mapContainer#map
+    include ../common/footer
